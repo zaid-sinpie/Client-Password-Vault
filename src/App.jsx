@@ -1,10 +1,10 @@
+import Signup from "./components/Signup";
 function App() {
-
   return (
-    <>
-    <p>Password Vault</p>
-    </>
-  )
+    <section>
+      <Signup />
+    </section>
+  );
 }
 
 export default App;
