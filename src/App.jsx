@@ -1,8 +1,11 @@
+import Login from "./components/Login";
 import Signup from "./components/Signup";
+
 function App() {
   return (
-    <section>
-      <Signup />
+    <section className="w-full">
+      {/* <Signup /> */}
+      <Login/>
     </section>
   );
 }

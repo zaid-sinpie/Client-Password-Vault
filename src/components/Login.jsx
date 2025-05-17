@@ -1,23 +1,19 @@
-import Input from "./Input";
 import Button from "./Button";
+import Input from "./Input";
 
-const Signup = () => {
+const Login = () => {
   return (
     <form className="flex flex-col h-fit gap-[5px] justify-around items-center">
         <div className="w-full text-center uppercase font-bold text-xl">
-            <h1>Sign up</h1>
+            <h1>Login</h1>
         </div>
         <Input label={"Username"} id={"username"}/>
         <Input label={"Password"} id={"password"} type="password"/>
-        <Input label={"Confirm Password"} id={"confirmPassword"} type="password"/>
         <div className="w-full">
-            
-        </div>
-        <div className="w-full">
-            <Button>Sign Up</Button>
+            <Button>Login</Button>
         </div>
     </form>
   )
 }
 
-export default Signup
+export default Login
