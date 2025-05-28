@@ -4,7 +4,7 @@ export async function SaveDataInStorage(newEntry) {
   if (
     !storageData.data ||
     !Array.isArray(storageData.data.userCredentialData)
-  ) {
+  ) { 
     await chrome.storage.local.set({
       ...storageData,
       data: {
@@ -32,7 +32,7 @@ async function getStoredData() {
 
 export async function getStoredApps() {
   const data = await chrome.storage.local.get();
-  return data.data.userCredentialData;
+  return data?.data?.userCredentialData || [];
 }
 
 export async function deleteDataFromStorage() {
