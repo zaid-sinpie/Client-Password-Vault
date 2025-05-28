@@ -30,6 +30,10 @@ async function getStoredData() {
   return data;
 }
 
+export async function getStoredApps() {
+  const data = await chrome.storage.local.get();
+  return data.data.userCredentialData;
+}
 
 export async function deleteDataFromStorage() {
   await chrome.storage.local.remove();
